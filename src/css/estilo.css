@@ -61,3 +61,45 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+header h1{
+    font-size: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+span{
+    color: var(--color-font3);
+}
+
+.header-menu{
+    display: flex;
+    gap: 20px;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+/* Responsividade */
+@media(width <= 1024px){
+  
+    .header-menu{
+        width: 100%;
+        height: 100vh;
+        background: var(--color-font4);
+        position: absolute;
+        z-index:1;
+        top:0;
+        left: -100%;
+        gap:0;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #titulo{
+        font-size: 2rem;
+    }
+    
+    }
